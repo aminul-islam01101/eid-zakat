@@ -1,0 +1,256 @@
+/*================ general styles section start ================== */
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #707070;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  display: block;
+  object-position: right;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 6.5rem;
+}
+
+h2 {
+  margin: 0 0 1.5rem 0;
+  color: #121212;
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #121212;
+  margin: 1.8rem 0;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fafafa;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/*-------------------- general styles section end------------- */
+
+/*------------utility classes section start------------------  */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container-short {
+  max-width: 100rem;
+  margin: 0 auto;
+  width: 70%;
+}
+.container-large {
+  max-width: 140rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+.split {
+  display: flex;
+  gap: 5rem;
+}
+
+.split-between {
+  display: flex;
+  /* gap: 5rem; */
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #f35021;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  margin-top: 2rem;
+  padding: 1.5rem 5rem;
+  cursor: pointer;
+}
+
+.section-intro {
+  width: 50%;
+  margin: 3rem auto;
+}
+
+.inline-orange {
+  color: #f35021;
+}
+.background-image {
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: overlay;
+}
+/*--------------utility classes section end------------------ */
+
+/* banner section start */
+.banner {
+  padding: 15rem 0;
+  color: #fff;
+  background-image: url(./images/banner.png),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+  min-height: 100vh;
+}
+.banner-content {
+  width: 50%;
+}
+
+/* banner section end */
+
+.description,
+iframe,
+.prayer-img {
+  flex-basis: 50%;
+}
+
+.prayer .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+.image img {
+  flex-grow: 1;
+}
+.img-art {
+  flex-wrap: wrap;
+}
+.img-art img {
+  flex: 1;
+}
+.img-art p {
+  flex-basis: 50%;
+}
+/*----------------- Subscription section styles end------------*/
+
+.split-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 80%;
+  margin: 10rem auto;
+}
+.help .section-intro {
+  flex-basis: 60%;
+  text-align: center;
+}
+.article-help {
+  flex-basis: calc((100% - 2rem) / 2);
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fef4f5;
+  padding: 2.5em;
+}
+.article-image {
+  flex-basis: 20%;
+}
+.article-body {
+  flex-basis: 75%;
+}
+.article-title {
+  margin-top: 0;
+}
+
+.image-showcase img{
+  width: 100%;
+}
+
+.article-card {
+  flex-basis: calc((100% - 4rem) / 3);
+  border-radius: 10px;
+}
+.card .section-intro {
+  flex-basis: 70%;
+  text-align: center;
+}
+.card-body{
+  padding: 2.5rem;
+}
+
+.article-card:hover{
+  box-shadow: 0 1em 3em 1.3em rgba(0,0,0,0.2);
+}
+.split-full-width{
+  width: 100%;
+}
+.card img{
+  width: 100%;
+}
+
+/*----------------- Footer section styles start------------*/
+
+footer {
+  text-align: center;
+  padding: 3rem 0 0 0;
+  background-color: #0b0d17;
+  color: #d9dbe1;
+ 
+}
+footer h3 {
+  color: #ff5959;
+  font-size: 3.6rem;
+  font-family: "lobster";
+}
+#copyright {
+  font-size: 1.5rem;
+}
+/*============= Footer section styles end================*/
