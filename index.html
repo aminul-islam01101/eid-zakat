@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
+    <script
+      src="https://kit.fontawesome.com/d025376340.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -23,32 +26,45 @@
     <section class="banner background-image">
       <div class="container">
         <header class="split-between">
-          <img class="header-image" src="./icons/fab-icon.png" alt="" />
+          <a href=""
+            ><img class="header-image" src="./icons/fab-icon.png" alt=""
+          /></a>
 
-          <nav>
+          <nav class="split-between">
             <ul class="split-between">
-              <li><a href="#">Home</a></li>
+              <li><a href="#" class="active">Home</a></li>
               <li><a href="#">About us</a></li>
-              <li class="services"><a href="#">Services</a>
+              <li class="services">
+                <a href="#">Services</a>
                 <ul class="drop-down">
-                    <li><a href="#">Zakat</a></li>
-                    <li><a href="#">donation</a>
+                  <li><a href="#">Zakat</a></li>
+                  <li>
+                    <a href="#">donation</a>
                     <ul class="side-drop">
                       <li><a href="#">petty</a></li>
                       <li><a href="#">small</a></li>
                       <li><a href="#">large</a></li>
                       <li><a href="#">huge</a></li>
                     </ul>
-                    </li>
-                    <li><a href="#">Zakat</a></li>
-                    <li><a href="#">Zakat</a></li>
-                  </ul>
-                
+                  </li>
+                  <li><a href="#">Zakat</a></li>
+                  <li><a href="#">Zakat</a></li>
+                </ul>
               </li>
               <li><a href="#">Feedback Corner</a></li>
             </ul>
+            <ul class="split-between">
+              <li>
+                <input type="text" placeholder="search" />
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-user"></i>
+              </li>
+            </ul>
           </nav>
         </header>
+
+        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
 
         <div class="banner-content">
           <h1>Let’s Help Those Who Are More In Need</h1>
@@ -56,7 +72,9 @@
             We are a non-profit organization that helps people in need of food
             and clothes and education.
           </p>
-          <a href="#" class="btn">Donate Now</a>
+          <a href="#" class="btn"
+            >Donate Now <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
         </div>
       </div>
     </section>
