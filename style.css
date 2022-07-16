@@ -100,6 +100,7 @@ section {
   display: flex;
   /* gap: 5rem; */
   justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 
 .btn {
@@ -145,6 +146,12 @@ section {
 }
 .banner-content {
   width: 50%;
+}
+.fa-solid{
+  transition:margin-left 0.5s ease-in-out;
+}
+.btn:hover  .fa-solid {
+  margin-left: .5em;
 }
 
 /* banner section end */
@@ -259,6 +266,15 @@ footer h3 {
   background-color: rgba(178, 176, 176, 0.361);
   padding: 0.4em 1em;
   border-radius: 1.8em 0 1.8em 0;
+  transition: transform .5s ease-in-out;
+}
+.header-image:hover{
+  transform: scale(.75);
+  
+}
+
+nav{
+  flex-basis: 70%;
 }
 nav ul {
   list-style-type: none;
@@ -274,6 +290,8 @@ header {
   position: fixed;
   top: 0;
   width: 80%;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 li a {
@@ -308,5 +326,31 @@ nav > ul > li:hover > ul {
   position: absolute;
 
   left: 95px;
-  top: 43px;
+  top: 58px;
 }
+nav a{
+  display: inline-block;
+}
+/* .active{
+  
+  border-bottom: solid 3px #1658d4; 
+ } */
+nav a::after {
+  content: "";
+  display: block;
+  /* position: absolute; */
+  border-bottom: solid 3px #ffffff; 
+  transform: scaleX(0);  
+  transition: transform .3s ease-in-out;
+}
+.active::after{
+  transform: scaleX(1);
+}
+
+.active:hover::after{
+  transform: scaleX(0);
+}
+nav a:hover::after {
+  transform: scaleX(1);
+ }
+ 
